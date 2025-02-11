@@ -23,7 +23,8 @@ body{
 }
 
 .price-container{
-  margin: 50px 20px 25px;
+  width: 305px;
+  margin: 50px auto 25px;
 }
 
 .community{
@@ -108,10 +109,27 @@ button{
   margin-right: 80px;
 }
 
-@media screen and (min-width:500px){
-
+@media screen and (min-width:700px){
   .price-container{
-    width: 60%;
-    margin: 50px auto;
+    width: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:160px auto 100px;
+
+  }
+
+  .community{
+    grid-column: 1/3;
+    padding: 30px;
+  }
+
+  .subscription{
+    padding: 30px;
+  }
+
+  button{
+    width: 100%;
+    padding: 9px;
+
   }
 }
